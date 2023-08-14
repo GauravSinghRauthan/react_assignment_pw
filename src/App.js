@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import Person from './person.jsx'
+import Button from './OnClick.jsx'
+import Header from './Header.jsx';
+import List from './list.jsx';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person name="Gaurav" age="15"/>
+      <Button text="plz click me" onClick={()=>console.log("clicked button")} />
+      <Header title="welcome to pwskills"/>
+      <List items={['gaurav','tarun','altaf','mylove']}/>
     </div>
   );
 }
